@@ -25,8 +25,8 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/*
 ---------------------------------------------
 reset
 --------------------------------------------- 
@@ -772,39 +772,6 @@ Services Style
 --------------------------------------------- 
 */
 
-.features {
-  margin-top: -80px;
-}
-
-.features .item {
-  padding: 35px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 25px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.features .item h4 {
-  font-size: 17px;
-  margin-top: 25px;
-  text-transform: uppercase;
-}
-
-.features .item .image {
-  width: 90px;
-  height: 90px;
-  display: inline-block;
-  text-align: center;
-  line-height: 90px;
-  background-color: #0071f8;
-  border-radius: 50%;
-  transition: all .3s;
-}
-
-.features .item:hover .image {
-  background-color: #ee626b;
-}
-
 
 
 /* 
@@ -865,34 +832,36 @@ Trending Style
   display: inline-block;
 }
 
-.trending .item .down-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  transition: all .3s;
-}
-
 .trending .item .down-content a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #ee626b;
-  color: #fff;
-  border-radius: 50%;
-  right: 25px;
-  bottom: 25px;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
   transition: all .3s;
+  display: block;
 }
 
-.trending .item:hover .down-content h4 {
+/*.trending .item .down-content a {*/
+/*  position: absolute;*/
+/*  display: inline-block;*/
+/*  text-align: center;*/
+/*  line-height: 40px;*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  background-color: #ee626b;*/
+/*  color: #fff;*/
+/*  border-radius: 50%;*/
+/*  right: 25px;*/
+/*  bottom: 25px;*/
+/*  transition: all .3s;*/
+/*}*/
+
+.trending .item .down-content a:hover {
   color: #0071f8;
 }
 
-.trending .item:hover .down-content a {
-  background-color: #0071f8;
-}
+/*.trending .item:hover .down-content a {*/
+/*  background-color: #0071f8;*/
+/*}*/
 
 
 /* 
@@ -937,38 +906,48 @@ Most Played Style
   display: inline-block;
 }
 
-.most-played .item .down-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  transition: all .3s;
-}
-
 .most-played .item .down-content a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  padding: 0px 15px;
-  background-color: #ee626b;
-  color: #fff;
-  border-radius: 20px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -20px;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
   transition: all .3s;
+  display: block;
 }
 
-.most-played .item:hover .down-content h4 {
+.most-view_trending .item{
+  height: 100%;
+}
+
+.most-view_trending .item .down-content{
+  text-align: left;
+}
+
+/*.most-played .item .down-content a {*/
+/*  position: absolute;*/
+/*  display: inline-block;*/
+/*  text-align: center;*/
+/*  line-height: 40px;*/
+/*  height: 40px;*/
+/*  padding: 0px 15px;*/
+/*  background-color: #ee626b;*/
+/*  color: #fff;*/
+/*  border-radius: 20px;*/
+/*  font-size: 15px;*/
+/*  text-transform: uppercase;*/
+/*  font-weight: 600;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  bottom: -20px;*/
+/*  transition: all .3s;*/
+/*}*/
+
+.most-played .item .down-content a:hover {
   color: #0071f8;
 }
 
-.most-played .item:hover .down-content a {
-  background-color: #0071f8;
-}
+/*.most-played .item:hover .down-content a {*/
+/*  background-color: #0071f8;*/
+/*}*/
 
 
 /* 
@@ -1215,12 +1194,21 @@ Shop Page Style
   color: #ee626b;
 }
 
+.trending-box{
+  height: fit-content !important;
+}
+
+.trending-items{
+  margin-bottom: 30px;
+}
+
 .trending-box .item  {
   background-color: #eeeeee;
   position: relative;
   overflow: hidden;
   border-radius: 25px;
   margin-bottom: 30px;
+  height: 100%;
 }
 
 .trending-box .item .thumb {
@@ -1262,34 +1250,38 @@ Shop Page Style
   display: inline-block;
 }
 
-.trending-box .item .down-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  transition: all .3s;
-}
-
 .trending-box .item .down-content a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #ee626b;
-  color: #fff;
-  border-radius: 50%;
-  right: 25px;
-  bottom: 25px;
+  color:  black;
+  font-size: 18px;
+  font-weight: 800;
   transition: all .3s;
+  display: block;
 }
 
-.trending-box .item:hover .down-content h4 {
+/*.trending-box .item .down-content a {*/
+/*  position: absolute;*/
+/*  display: inline-flex;*/
+/*  justify-content: center;*/
+/*  !*text-align: center;*!*/
+/*  align-items: center;*/
+/*  line-height: 40px;*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  background-color: #ee626b;*/
+/*  color: #fff;*/
+/*  border-radius: 50%;*/
+/*  right: 25px;*/
+/*  bottom: 25px;*/
+/*  transition: all .3s;*/
+/*}*/
+
+.trending-box .item .down-content a:hover {
   color: #0071f8;
 }
 
-.trending-box .item:hover .down-content a {
-  background-color: #0071f8;
-}
+/*.trending-box .item:hover .down-content a {*/
+/*  background-color: #0071f8;*/
+/*}*/
 
 .trending ul.pagination {
   margin-top: 50px;
@@ -1360,7 +1352,7 @@ Single Page Style
   font-style: normal;
   color: #c8c8c8;
   font-size: 17px;
-  text-decoration: line-through;
+  text-decoration: none;
   font-weight: 500;
   margin-right: 5px;
 }
@@ -1468,6 +1460,23 @@ Single Page Style
 
 .tabs-content .tab-content {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tabs-content .tab-content .review_item .review_heading{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabs-content .tab-content .review_item .review_heading span{
+  background: #0071f8;
+  font-size: 14px;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 6px;
 }
 
 .related-games .main-button {
