@@ -2,40 +2,41 @@
   "books": [
     {
       "id": "1",
-      "title": "Microservices Patterns",
-      "subtitle": "With examples in Java",
+      "title": "Microservices Patterns: With examples in Java",
       "author": "Chris Richardson",
       "publisher": "Manning",
-      "image": "img/MPWEIJ.jpg",
-      "publish_year": "2018",
+      "image": "/app/assets/images/MPWEIJ.jpg",
+      "publish_year": 2018,
       "language": "English",
       "description": "Microservices Patterns teaches enterprise developers and architects how to build applications with the microservice architecture. Rather than simply advocating for the use the microservice architecture, this clearly-written guide takes a balanced, pragmatic approach, exploring both the benefits and drawbacks.",
       "category": "Infomation technology",
-      "pdf": "assets/pdf/Microservices Patterns With examples in Java.pdf",
-      "rating": "4",
-      "view": "1000",
+      "pdf": "/app/assets/pdf/Microservices Patterns With examples in Java.pdf",
+      "view": 1000,
       "reviews": [
         {
           "date": "22/10/2020",
           "content": "This book is very helpful for me to learn Microservices patterns",
           "reviewer": "John Doe"
+        },
+        {
+          "date": "25/10/2020",
+          "content": "This book is very good",
+          "reviewer": "Timmy Jeff"
         }
       ]
     },
     {
       "id": "2",
       "title": "English Grammar in Use Book with Answers",
-      "subtitle": "A Self-Study Reference and Practice Book for Intermediate Learners of English",
       "author": "Raymond Murphy",
       "publisher": "Cambridge University Press",
-      "image": "img/EGIUWA.jpg",
-      "publish_year": "2019",
+      "image": "/app/assets/images/EGIUWA.jpg",
+      "publish_year": 2019,
       "language": "English",
       "description": "Raymond Murphy's English Grammar in Use is the first choice for intermediate (B1-B2) learners and covers all the grammar you will need at this level. This book with answers has clear explanations and practice exercises that have helped millions of people around the world improve their English.",
       "category": "Foreign Language",
-      "pdf": "assets/pdf/English grammar in use with answers.pdf",
-      "rating": "3",
-      "view": "500",
+      "pdf": "/app/assets/pdf/English grammar in use with answers.pdf",
+      "view": 500,
       "reviews": [
         {
           "date": "22/10/2020",
@@ -47,17 +48,15 @@
     {
       "id": "3",
       "title": "The Complete Sherlock Holmes (Illustrated)",
-      "subtitle": "",
       "author": "Arthur Conan Doyle",
       "publisher": "Top Five Books",
-      "image": "img/TCSHI.jpg",
-      "publish_year": "2014",
+      "image": "/app/assets/images/TCSHI.jpg",
+      "publish_year": 2014,
       "language": "English",
       "description": "The first of his Sherlock Holmes stories was a study in scarlet 1887, Followed by another novel, The sign of four 1890, but Sherlock Holmes rode the waves of popularity only after he started featuring in The strand Magazine from 1891. The strand stories were collected as the adventures of Sherloc Holme 1892 and the Memories of Sherlock Holmes 1894. Doyles attempt to kill of his creation was not successful and the classic detective made a comeback in two novels, the Hound of the Baskervills 1902 and The Valley of fear 1915 and in collection of short stories, The Return of Sherlock Holmes 1905. His Last Bow 1917 and the case-Book of Sherlock Holmes 1927.",
       "category": "Novel",
-      "pdf": "assets/pdf/The Complete Sherlock Holmes (Illustrated).pdf",
-      "rating": "5",
-      "view": "300",
+      "pdf": "/app/assets/pdf/The Complete Sherlock Holmes (Illustrated).pdf",
+      "view": 300,
       "reviews": [
         {
           "date": "22/10/2020",
@@ -72,17 +71,16 @@
       "subtitle": "The Alchemist",
       "author": "Paulo Coelho",
       "publisher": "Công ty Nhã Nam",
-      "image": "img/NGK.jpg",
-      "publish_year": "2002",
+      "image": "/app/assets/images/NGK.jpg",
+      "publish_year": 2002,
       "language": "Tiếng Việt",
       "description": "Tất cả những trải nghiệm trong chuyến phiêu du theo đuổi vận mệnh của mình đã giúp Santiago thấu hiểu được ý nghĩa sâu xa nhất của hạnh phúc, hòa hợp với vũ trụ và con người. Tiểu thuyết Nhà giả kim của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc.",
       "category": "Mystery Novel",
-      "pdf": "assets/pdf/NhaGiaKim_NhaNam.pdf",
-      "rating": "5",
-      "view": "800",
+      "pdf": "/app/assets/pdf/NhaGiaKim_NhaNam.pdf",
+      "view": 800,
       "reviews": [
         {
-          "date": "6/1/2024",
+          "date": "06/01/2024",
           "content": "Chỉ cần đi theo tiếng gọi trái tim, thực hiện điều bản thân mong muốn, cứ đi rồi con đường sẽ tự mở lối.... Sách quá hay.",
           "reviewer": "NagisaS"
         }
@@ -91,17 +89,15 @@
     {
       "id": "5",
       "title": "Chủ Nghĩa Tự Do Truyền Thống",
-      "subtitle": "",
       "author": "Ludwig von Mises",
       "publisher": "Nhà Xuất Bản Tri Thức",
-      "image": "img/CNTDTT.jpg",
-      "publish_year": "2013",
+      "image": "/app/assets/images/CNTDTT.jpg",
+      "publish_year": 2013,
       "language": "Tiếng Việt",
       "description": "Cuốn sách tương đối mỏng này có tầm quan trọng gấp nhiều lần sức tưởng tượng nếu chỉ nhìn vào độ dầy và ngôn ngữ khiêm nhường của nó. Đây là tác phẩm bàn về xã hội tự do, bàn về điều mà hiện nay có thể được gọi là “chính sách” đối nội và đối ngoại cho một xã hội như thế; và đặc biệt là bàn về những trở ngại và khó khăn, cả thực tế lẫn tưởng tượng, trên con đường thiết lập và giữ gìn hình thức tổ chức một xã hội như thế.",
       "category": "Philosophy",
-      "pdf": "assets/pdf/ChuNghiaTuDoTruyenThong.pdf",
-      "rating": "3",
-      "view": "550",
+      "pdf": "/app/assets/pdf/ChuNghiaTuDoTruyenThong.pdf",
+      "view": 550,
       "reviews": [
         {
           "date": "21/12/2021",
@@ -113,20 +109,18 @@
     {
       "id": "6",
       "title": "Harry Potter and the Half-blood Prince",
-      "subtitle": "",
       "author": "J. K. Rowling",
       "publisher": "Bloomsbury",
-      "image": "img/HPATHBP.jpg",
-      "publish_year": "2005",
+      "image": "/app/assets/images/HPATHBP.jpg",
+      "publish_year": 2005,
       "language": "English",
       "description": "It is the middle of the summer, but there is an unseasonal mist pressing against the windowpanes. Harry Potter is waiting nervously in his bedroom at the Dursleys' house in Privet Drive for a visit from Professor Dumbledore himself. One of the last times he saw the Headmaster was in a fierce one-to-one duel with Lord Voldemort, and Harry can't quite believe that Professor Dumbledore will actually appear at the Dursleys' of all places. Why is the Professor coming to visit him now? What is it that cannot wait until Harry returns to Hogwarts in a few weeks' time? Harry's sixth year at Hogwarts has already got off to an unusual start, as the worlds of Muggle and magic start to intertwine...",
       "category": "Fantasy Novel",
-      "pdf": "assets/pdf/Harry Potter and the Half-blood Prince.pdf",
-      "rating": "4",
-      "view": "2000",
+      "pdf": "/app/assets/pdf/Harry Potter and the Half-blood Prince.pdf",
+      "view": 2000,
       "reviews": [
         {
-          "date": "3/8/2022",
+          "date": "03/08/2022",
           "content": "Câu truyện thật sự thú vị, tôi đã học được nhiều từ vựng tiếng anh bằng cuốn tiểu thuyết này.",
           "reviewer": "NagisaS"
         }
@@ -135,20 +129,18 @@
     {
       "id": "7",
       "title": "Tôi Đã Kiếm Được 2.000.000 Đô-La Từ Thị Trường Chứng Khoán Như Thế Nào?",
-      "subtitle": "",
       "author": "Nicolas Darvas",
       "publisher": "NHÀ XUẤT BẢN LAO ĐỘNG-XÃ HỘI",
-      "image": "img/1-TDKD2DTTTCKNTN.jpg",
-      "publish_year": "2008",
+      "image": "/app/assets/images/1-TDKD2DTTTCKNTN.jpg",
+      "publish_year": 2008,
       "language": "Việt Nam",
       "description": "Điều đặc biệt của cuốn sách là các kinh nghiệm của tác giả được trình bày rất cô đọng, có dẫn chứng thuyết phục qua ngôn từ dễ hiểu song vẫn chứa đựng các nội dung mang tính hàn lâm trong phân tích và đầu tư chứng khoán. Qua cuốn sách, người đọc cũng sẽ hiểu được các vấn đề lý thuyết về phân tích cơ bản, phân tích kỹ thuật, kỹ năng giao dịch và chiến lược đầu tư chứng khoán được áp dụng linh hoạt trong thực tế đầu tư chứng khoán như thế nào. Người đọc sẽ có cơ hội biết về Lý thuyết hộp của Nicolas Darvas và những ứng dụng tuyệt vời của nó trong đầu tư chứng khoán. Vì vậy, cuốn sách cũng là tài liệu tham khảo hữu ích đối với các sinh viên kinh tế, đặc biệt là sinh viên chuyên ngành Ngân hàng – Tài chính – Chứng khoán.",
       "category": "Kinh Tế - Quản Lý",
-      "pdf": "assets/pdf/1-toi-da-kiem-duoc-2-000-000-do-la-tu-thi-truong-chung-khoan-nhu-the-nao.pdf",
-      "rating": "5",
-      "view": "600",
+      "pdf": "/app/assets/pdf/1-toi-da-kiem-duoc-2-000-000-do-la-tu-thi-truong-chung-khoan-nhu-the-nao.pdf",
+      "view": 600,
       "reviews": [
         {
-          "date": "7/3/2024",
+          "date": "07/03/2024",
           "content": "Hay",
           "reviewer": "Mai"
         }
@@ -157,17 +149,15 @@
     {
       "id": "8",
       "title": "Lịch Sử Giao Thương: Thương Mại Định Hình Thế Giới Như Thế Nào?",
-      "subtitle": "",
       "author": "William J. Bernstein",
       "publisher": "NHÀ XUẤT BẢN THẾ GIỚI",
-      "image": "img/2-LSGTTMDHTGNTN.jpg",
-      "publish_year": "2018",
+      "image": "/app/assets/images/2-LSGTTMDHTGNTN.jpg",
+      "publish_year": 2018,
       "language": "Việt Nam",
       "description": "“Toàn cầu hóa” hóa ra không phải là một hay thậm chí là một chuỗi sự kiện; mà đó là tiến trình diễn ra chậm rãi trong một thời gian rất, rất dài. Thế giới không đột nhiên trở nên “phẳng” với phát kiến về Internet, và thương mại không bất ngờ bị các tập đoàn lớn tầm cỡ toàn cầu chi phối vào cuối thế kỷ 20. Khởi đầu bằng hàng hóa giá trị cao được ghi nhận trong lịch sử, sau đó từ từ mở rộng sang các mặt hàng ít quý giá hơn, cồng kềnh và dễ hư hỏng hơn, những thị trường của Cựu Thế giới dần tiến đến hợp nhất. Với hành trình đầu tiên của người châu Âu tới Tân Thế giới, quá trình hội nhập toàn cầu diễn ra ngàycàng mạnh mẽ. Hôm nay, các tàu container đồ sộ, máy bay phản lực, Internet, cùng mạng lưới cung ứng và sản xuất ngày càng được toàn cầu hóa chỉ là những bước tiến xa hơn của một quá trình đã diễn ra suốt 5.000 năm qua. Nếu chúng ta muốn biết về những mô hình thương mại toàn cầu đang chuyển dịch nhanh chóng ngày nay, cách thực sự hữu ích là tìm hiểu những gì đã xảy ra trước đây. Thông qua những câu chuyện và ý tưởng được chọn lọc kỹ càng, tác giả đã cung cấp thông tin và thách thức các nhận định ở cả hai góc độ tư tưởng lớn trong vấn đề tự do thương mại: “tự do thương mại tạo ra những sự khích lệ và cơ hội ngang bằng giúp nâng cao phúc lợi nói chung cho con người đồng thời làm gia tăng chênh lệch giàu nghèo với ảnh hưởng xấu về mặt xã hội.",
       "category": "Lịch Sử - Chính Trị",
-      "pdf": "assets/pdf/2-lich-su-giao-thuong-thuong-mai-dinh-hinh-the-gioi-nhu-the-nao.pdf",
-      "rating": "4",
-      "view": "200",
+      "pdf": "/app/assets/pdf/2-lich-su-giao-thuong-thuong-mai-dinh-hinh-the-gioi-nhu-the-nao.pdf",
+      "view": 200,
       "reviews": [
         {
           "date": "24/10/2023",
@@ -179,20 +169,18 @@
     {
       "id": "9",
       "title": "Nghệ thuật bán hàng bậc cao",
-      "subtitle": "",
       "author": "Zig Ziglar",
       "publisher": "NHÀ XUẤT BẢN TỔNG HỢP THÀNH PHỐ HỒ CHÍ MINH",
-      "image": "img/3-NTBHBC.jpg",
-      "publish_year": "1984",
+      "image": "/app/assets/images/3-NTBHBC.jpg",
+      "publish_year": 1984,
       "language": "Việt Nam",
       "description": "Triết lý chứa đựng trong cuốn sách Nghệ thuật bán hàng bậc cao thật đơn giản: “Bạn có thể có được những tất cả mọi thứ trong cuộc sống nếu bạn biết giúp người khác đạt được điều họ muốn”, thậm chí còn đúng đắn và cần thiết hơn trong cuộc sống hiện nay so với thời kỳ khi cuốn Nghệ Thuật Bán Hàng Bậc Cao được xuất bản lần đầu. Mục tiêu cuả một thương vụ là đảm bảo khách hàng nhận được giá trị tương xứng, nhưng nếu bạn mang đến cho khách hàng những giá trị còn cao hơn giá trị mà lẽ ra họ sẽ nhận được thì không những bạn đã có một thương vụ thành công mà bạn còn có thêm một khách hàng sẵn lòng giúp bạn có thêm nhiều khách hàng khác nữa.",
       "category": "Marketing - Bán hàng",
-      "pdf": "assets/pdf/3-nghe-thuat-ban-hang-bac-cao.pdf",
-      "rating": "5",
-      "view": "400",
+      "pdf": "/app/assets/pdf/3-nghe-thuat-ban-hang-bac-cao.pdf",
+      "view": 400,
       "reviews": [
         {
-          "date": "4/7/2022",
+          "date": "04/07/2022",
           "content": "Tôi rất thích cuốn sách này!",
           "reviewer": "Mai"
         }
