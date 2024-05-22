@@ -59,23 +59,30 @@ function fetchReviewOfBook(book){
 }
 
 function handleReadBook(pdf){
-    console.log($("#read-book"));
+    const userLoggedInJSON = localStorage.getItem("userLoggedInJSON");
     $(document).ready(function(){
-        $('#read-book').flipBook({
-            pdfUrl: pdf,
-            lightBox: true,
-            layout:3,
-            currentPage:{vAlign:"bottom", hAlign:"left"},
-            btnPrint : {
-                hideOnMobile:true
-            },
-            btnColor:'#0071f8',
-            sideBtnColor:'#0071f8',
-            sideBtnSize:60,
-            sideBtnBackground:"rgba(0,0,0,0.7)",
-            sideBtnRadius:60,
-            btnSound:{vAlign:"top", hAlign:"left"},
-            btnAutoplay:{vAlign:"top", hAlign:"left"},
-        })
+        if(userLoggedInJSON){
+            $('#read-book').flipBook({
+                pdfUrl: pdf,
+                lightBox: true,
+                layout:3,
+                currentPage:{vAlign:"bottom", hAlign:"left"},
+                btnPrint : {
+                    hideOnMobile:true
+                },
+                btnColor:'#0071f8',
+                sideBtnColor:'#0071f8',
+                sideBtnSize:60,
+                sideBtnBackground:"rgba(0,0,0,0.7)",
+                sideBtnRadius:60,
+                btnSound:{vAlign:"top", hAlign:"left"},
+                btnAutoplay:{vAlign:"top", hAlign:"left"},
+            })
+        }else{
+            $('#read-book').click(function (){
+                location.href = '/read-book-online-project/app/pages/login.html'
+            })
+        }
+
     })
 }
