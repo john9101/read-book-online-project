@@ -11,7 +11,10 @@ function fetchBookDetail() {
                 throw new Error('Network response was not ok');
             }
         })
-        .then(book => renderBookDetailData(book,container))
+        .then(function (book){
+            renderBookDetailData(book,container);
+            handleReadBook(book.pdf)
+        })
 }
 fetchBookDetail()
 
@@ -27,7 +30,8 @@ function renderBookDetailData(book, container) {
             <span class="price"><em>Lượt xem</em>${book.view} <i class="fa-solid fa-eye"></i></span>
             <p>${book.description}</p>
             <form id="qty" action="#">
-                <button type="submit" id="read-book"><i class="fa-brands fa-readme"></i> ĐỌC SÁCH</button>
+                <button type="button" id="read-book"><i class="fa-brands fa-readme"></i> ĐỌC SÁCH</button>
+                <a href="${book.pdf}" id="download-book" download><i class="fa-solid fa-download"></i> TẢI XUỐNG</a>
             </form>
             <ul>
                 <li><span>Tác giả:</span> ${book.author}</li>
@@ -52,4 +56,26 @@ function fetchReviewOfBook(book){
             <p>${review.content}</p>
         </div>`
     }).join('')
+}
+
+function handleReadBook(pdf){
+    console.log($("#read-book"));
+    $(document).ready(function(){
+        $('#read-book').flipBook({
+            pdfUrl: pdf,
+            lightBox: true,
+            layout:3,
+            currentPage:{vAlign:"bottom", hAlign:"left"},
+            btnPrint : {
+                hideOnMobile:true
+            },
+            btnColor:'#0071f8',
+            sideBtnColor:'#0071f8',
+            sideBtnSize:60,
+            sideBtnBackground:"rgba(0,0,0,0.7)",
+            sideBtnRadius:60,
+            btnSound:{vAlign:"top", hAlign:"left"},
+            btnAutoplay:{vAlign:"top", hAlign:"left"},
+        })
+    })
 }

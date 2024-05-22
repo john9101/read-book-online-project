@@ -1675,3 +1675,27 @@ body {
 @media (max-width: 1200px) {
   
 }
+
+#qty{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#qty #download-book{
+  color: black;
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  transition: all .3s;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 25px;
+}
+
+#qty #download-book:hover{
+  background: black;
+  color: white;
+}
