@@ -63,7 +63,6 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-
   <div class="main-banner">
     <div class="container">
       <div class="row">
@@ -73,9 +72,9 @@
             <h2>WEBSITE ĐỌC SÁCH ONLINE MIỄN PHÍ!</h2>
             <p>EFLIPBOOK là nền tảng website đọc sách online miễn phí. Nơi đây bạn có thể đọc những thể loại sách khác nhau. Hãy khám phá và giới thiệu với bạn bè về website này nhé.</p>
             <div class="search-input">
-              <form id="search" action="#">
-                <input type="text" placeholder="Nhập nội dung tìm kiếm" id='searchText' name="searchKeyword" onkeypress="handle" />
-                <button role="button">TÌM KIẾM</button>
+              <form id="searchForm" action="search.html">
+                <input type="text" placeholder="Nhập nội dung tìm kiếm" id='searchInput' name="searchKeyword" onkeypress="handle" />
+                <button type="submit">TÌM KIẾM</button>
               </form>
             </div>
           </div>
@@ -139,6 +138,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../assets/js/project/session.js"></script>
   <script src="../assets/js/project/index.js"></script>
+  <script src="../assets/js/project/search.js"></script>
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="../assets/js/isotope.min.js"></script>

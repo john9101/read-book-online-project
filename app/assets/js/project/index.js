@@ -36,3 +36,10 @@ function renderBooksData(books,container){
     }).join('');
     container.append(listBookMostView)
 }
+
+document.querySelector("#searchForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const query = document.querySelector("#searchInput").value.toLowerCase();
+
+    window.location.href = `search.html?searchKeyword=${encodeURIComponent(query)}`;
+});
