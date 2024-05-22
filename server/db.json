@@ -186,5 +186,21 @@
         }
       ]
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "john9101",
+      "password": "abc123",
+      "fullName": "John Doe",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "username": "timmy2309",
+      "password": "xyz456",
+      "fullName": "Timmy Jeff",
+      "role": "user"
+    }
   ]
 }
