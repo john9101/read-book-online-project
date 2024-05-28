@@ -1,4 +1,4 @@
-//LT Đông
+//Lâm Trạch Đông
 //UC_02 1.2.2 Hệ thống nhận vào nội dung người dùng đã nhập.
 //(khi nhập vào thanh tìm kiếm ở trang search.html)
 document.querySelector("#searchForm").addEventListener("submit", function(event) {
