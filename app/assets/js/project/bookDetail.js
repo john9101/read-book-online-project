@@ -1,8 +1,8 @@
 let urlParams = new URLSearchParams(window.location.search);
-let id = urlParams.get("id");
+let id = urlParams.get("bookId");
+const readBookButton = document.getElementById('read-book')
 
-function fetchBookDetail() {
-    const container = document.querySelector(".single-product .container");
+function fetchAPIBookDetailWithId(id) {
     fetch(`http://localhost:3000/books/${id}`)
         .then(response => {
             if (response.ok){
@@ -12,39 +12,36 @@ function fetchBookDetail() {
             }
         })
         .then(function (book){
-            renderBookDetailData(book,container);
-            handleReadBook(book.pdf)
+            renderBookDetailData(book);
+            const pdf = readBookButton.value
+            handleReadBookFromPdf(readBookButton, pdf)
         })
 }
-fetchBookDetail()
+fetchAPIBookDetailWithId(id)
 
-function renderBookDetailData(book, container) {
-    container.innerHTML = `<div class="row">
-        <div class="col-lg-6">
-            <div class="left-image">
-                <img src="${book.image}" alt=""/>
-            </div>
-        </div>
-        <div class="col-lg-6 align-self-center">
-            <h4>${book.title}</h4>
-            <span class="price"><em>Lượt xem</em>${book.view} <i class="fa-solid fa-eye"></i></span>
-            <p>${book.description}</p>
-            <form id="qty" action="#">
-                <button type="button" id="read-book"><i class="fa-brands fa-readme"></i> ĐỌC SÁCH</button>
-                <a href="${book.pdf}" id="download-book" download><i class="fa-solid fa-download"></i> TẢI XUỐNG</a>
-            </form>
-            <ul>
-                <li><span>Tác giả:</span> ${book.author}</li>
-                <li><span>Nhà sản xuất:</span> ${book.publisher}</li>
-                <li><span>Năm sản xuất:</span> ${book.publish_year}</li>
-                <li><span>Ngôn ngữ:</span> ${book.language}</li>
-                <li><span>Thể loại:</span> ${book.category}</li>
-            </ul>
-        </div>
-        <div class="col-lg-12">
-            <div class="sep"></div>
-        </div>
-    </div>`
+function renderBookDetailData(book) {
+    const bookTitleElement = document.getElementById('book-title')
+    const bookDescriptionElement = document.getElementById('book-description')
+    const bookImageElement = document.getElementById('book-image')
+    const bookViewElement = document.getElementById('book-view')
+    const bookAuthorElement = document.getElementById('book-author')
+    const bookPublisherElement = document.getElementById('book-publisher')
+    const bookPublishYearElement = document.getElementById('book-publish_year')
+    const bookLanguageElement = document.getElementById('book-language')
+    const bookCategoryElement = document.getElementById('book-category')
+    const downloadBookButton = document.getElementById('download-book')
+    bookTitleElement.textContent = book.title;
+    bookDescriptionElement.textContent = book.description;
+    bookImageElement.src = book.image;
+    bookViewElement.textContent = book.view;
+    bookAuthorElement.append(book.author);
+    bookPublisherElement.append(book.publisher);
+    bookPublishYearElement.append(book.publish_year);
+    bookLanguageElement.append(book.language);
+    bookCategoryElement.append(book.category);
+    readBookButton.value = book.pdf;
+    downloadBookButton.href = book.pdf;
+
     fetchReviewOfBook(book)
 }
 
@@ -56,33 +53,4 @@ function fetchReviewOfBook(book){
             <p>${review.content}</p>
         </div>`
     }).join('')
-}
-
-function handleReadBook(pdf){
-    const userLoggedInJSON = localStorage.getItem("userLoggedInJSON");
-    $(document).ready(function(){
-        if(userLoggedInJSON){
-            $('#read-book').flipBook({
-                pdfUrl: pdf,
-                lightBox: true,
-                layout:3,
-                currentPage:{vAlign:"bottom", hAlign:"left"},
-                btnPrint : {
-                    hideOnMobile:true
-                },
-                btnColor:'#0071f8',
-                sideBtnColor:'#0071f8',
-                sideBtnSize:60,
-                sideBtnBackground:"rgba(0,0,0,0.7)",
-                sideBtnRadius:60,
-                btnSound:{vAlign:"top", hAlign:"left"},
-                btnAutoplay:{vAlign:"top", hAlign:"left"},
-            })
-        }else{
-            $('#read-book').click(function (){
-                location.href = '/read-book-online-project/app/pages/login.html'
-            })
-        }
-
-    })
 }

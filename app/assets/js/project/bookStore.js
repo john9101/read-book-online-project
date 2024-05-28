@@ -19,11 +19,11 @@ function renderBooksData(books,container){
           <div class="item">
             <div class="thumb">
               <a href="bookDetail.html?id=${book.id}"><img src="${book.image}" alt=""></a>
-              <span class="price"><em>Lượt xem</em>${book.view} <i class="fa-solid fa-eye"></i></span>
+              <span class="view"><em>Lượt xem</em>${book.view} <i class="fa-solid fa-eye"></i></span>
             </div>
             <div class="down-content">
               <span class="category">${book.category}</span>
-              <a href="bookDetail.html?id=${book.id}">${book.title}</a>
+              <a href="bookDetail.html?bookId=${book.id}">${book.title}</a>
             </div>
           </div>
         </div>`
