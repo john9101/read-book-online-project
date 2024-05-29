@@ -37,6 +37,8 @@ function renderBooksData(books,container){
     container.append(listBookMostView)
 }
 
+//LT Đông UC_02 1.2.1 Hệ thống nhận vào nội dung người dùng đã nhập.
+//(khi nhập vào thanh tìm kiếm ở trang index.html sẽ điều hướng về searchController)
 document.querySelector("#searchForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const query = document.querySelector("#searchInput").value.toLowerCase();
