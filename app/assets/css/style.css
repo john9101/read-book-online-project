@@ -52,7 +52,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -91,7 +91,8 @@ Global Styles
 */
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
 }
 
 ::selection {
@@ -707,7 +708,7 @@ Banner Style
   border-radius: 25px;
 }
 
-.main-banner .right-image span.price {
+.main-banner .right-image span.view {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -772,7 +773,7 @@ Trending Style
   overflow: hidden;
 }
 
-.trending .item span.price em {
+.trending .item span.view em {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -780,7 +781,7 @@ Trending Style
   display: block;
 }
 
-.trending .item span.price {
+.trending .item span.view {
   text-align: right;
   position: absolute;
   right: 20px;
@@ -1190,7 +1191,7 @@ Shop Page Style
   overflow: hidden;
 }
 
-.trending-box .item span.price em {
+.trending-box .item span.view em {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1198,7 +1199,7 @@ Shop Page Style
   display: block;
 }
 
-.trending-box .item span.price {
+.trending-box .item span.view {
   text-align: right;
   position: absolute;
   right: 20px;
@@ -1315,13 +1316,13 @@ Single Page Style
   margin-bottom: 20px;
 }
 
-.single-product span.price {
+.single-product span.view {
   font-size: 27px;
   font-weight: 700;
   color: #0071f8;
 }
 
-.single-product span.price em {
+.single-product span.view em {
   font-style: normal;
   color: #c8c8c8;
   font-size: 17px;
@@ -1843,4 +1844,57 @@ body {
 
 .login-container .signup label:hover{
   text-decoration: underline;
+}
+
+.modal-popup{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-popup .popup-contain{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  border: 1px solid #0071f8;
+  border-radius: 20px;
+  padding: 20px 14px;
+}
+
+.modal-popup .popup-contain button{
+  width: fit-content;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  background: #0071f8;
+  align-self: center;
+  font-size: 16px;
+}
+
+.modal-popup .popup-contain .popup-content{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  gap: 20px;
+  align-items: center;
+  width: 12rem;
+  line-height: 24px;
+  text-align: center;
+  color: black;
+}
+
+.modal-popup .popup-contain .popup-content i{
+  color: #ffb818;
+  font-size: 100px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffb818;
 }
