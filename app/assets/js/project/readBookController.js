@@ -1,9 +1,9 @@
-// Hàm handleReadBookFromPdf(readBookButton,pdf) dùng để xữ lý đọc sách từ file pdf
+// UCS 2. Hệ thống (readBookController.js) xử lý yêu cầu đọc sách từ file pdf của cuốn sách (handleReadBookFromPdf(readBookButton,pdf))
 function handleReadBookFromPdf(readBookButton,pdf){
     const userLoggedInJSON = localStorage.getItem("userLoggedInJSON");
     $(document).ready(function(){
         if(userLoggedInJSON){
-            if(checkExistPdf(pdf)){
+            if(checkNullPdf(pdf)){
                 setupDisplayBookConfig(readBookButton,pdf)
             }else {
                 $(readBookButton).click(function (){
@@ -18,14 +18,14 @@ function handleReadBookFromPdf(readBookButton,pdf){
     })
 }
 
-// Hàm checkExistPdf(pdf) dùng để kiểm tra file pdf của cuốn sách có tồn tại không
-function checkExistPdf(pdf){
+// UCS 3. Hệ thống (readBookController.js) tiến hành kiểm tra file pdf của cuốn sách có tồn tại hay không (checNullPdf(pdf))
+function checkNullPdf(pdf){
     return pdf !== 'null'
 }
 
-// Hàm setupDisplayBookConfig(readBookButton,pdf) dùng để thiết lập cấu hình hiễn thị cuốn sách tích hợp cùng Read3D Flipbook JQuery Plugin
+// UCS 4. Nếu file pdf tồn tại thì hệ thống (readBookController.js) thiết lập cấu hình hiển thị nội dung của cuốn sách (setupDisplayBookConfig(readBookButton,pdf)) thông qua Real3D Fligboook jQuery plugin (flipbook.min.js)
 function setupDisplayBookConfig(readBookButton,pdf){
-    $(readBookButton).flipBook({
+    $(readBookButton).flipBook({ // UCS 5. Real3D Fligboook jQuery plugin (flipbook.min.js) xử lý hiện thị cuốn sách từ các thiết lập cấu hình hiện thị (flipBook(configDisplay)) của hệ thống (readBookController.js)
         pdfUrl: pdf,
         lightBox: true,
         layout:3,
@@ -43,7 +43,7 @@ function setupDisplayBookConfig(readBookButton,pdf){
     })
 }
 
-// Hàm throwNotFoundContentBook() dùng để xứ lý hiển thị pop-up "Không tìm thấy nội dung cuốn sách"
+// UCS 3.1 File pdf không tồn tại
 function displayPopupNotFoundContentBook(){
     const modalPopup = $('.modal-popup')
     modalPopup.css('display', 'flex');

@@ -41,7 +41,6 @@ function renderBookDetailData(book) {
     bookCategoryElement.append(book.category);
     readBookButton.value = book.pdf;
     downloadBookButton.href = book.pdf;
-
     fetchReviewOfBook(book)
 }
 
