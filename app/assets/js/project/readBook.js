@@ -17,7 +17,6 @@ function handleReadBookFromPdf(readBookButton,pdf){
         }
     })
 }
-handleReadBookFromPdf(readBookButton,pdf);
 
 // Hàm checkExistPdf(pdf) dùng để kiểm tra file pdf của cuốn sách có tồn tại không
 function checkExistPdf(pdf){
@@ -49,8 +48,8 @@ function displayPopupNotFoundContentBook(){
     const modalPopup = $('.modal-popup')
     modalPopup.css('display', 'flex');
     modalPopup.html(`<div class="popup-contain">
-        <div class="popup-content"><i class="fa-solid fa-triangle-exclamation"></i> Không tìm thấy nội dung cuốn sách</p></div>
-        <button class="popup-closed">Đóng</button>
+        <div class="popup-content"><i class="fa-solid fa-triangle-exclamation"></i> Rất tiếc, không tìm thấy nội dung của cuốn sách</div>
+        <button class="popup-closed">ĐÓNG</button>
     </div>`)
 
     const popupClosed = $('.popup-closed')

@@ -25,11 +25,11 @@ function renderBooksData(books,container){
         return `<div class="col-lg-3 col-md-6 align-self-stretch mb-30 trending-items col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="bookDetail.html?id=${book.id}"><img src="${book.image}" alt=""></a>
+              <a href="bookDetail.html?bookId=${book.id}"><img src="${book.image}" alt=""></a>
             </div>
             <div class="down-content">
               <span class="category">${book.category}</span>
-              <a href="bookDetail.html?id=${book.id}">${book.title}</a>
+              <a href="bookDetail.html?bookId=${book.id}">${book.title}</a>
             </div>
           </div>
         </div>`
